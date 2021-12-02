@@ -1,0 +1,11 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Cormorant+Garamond&family=Raleway:wght@600&family=Roboto&family=Ubuntu:wght@500&display=swap');
+
+@import "./partials/variables";
+@import "./partials/functions";
+@import "./partials/mixins";
+@import "./partials/buttons";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./global.scss";
+@import "./components/form.scss";

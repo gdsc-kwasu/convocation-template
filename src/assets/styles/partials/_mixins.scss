@@ -1,0 +1,23 @@
+/** @format */
+
+@mixin test($break-point, $res) {
+  @each $key, $value in $grid-breakpoints {
+    @if $key == $res {
+      @media screen and ($break-point: $value) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin media-breakpoint-up($res) {
+  @include test(min-width, $res) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($res) {
+  @include test(max-width, $res) {
+    @content;
+  }
+}

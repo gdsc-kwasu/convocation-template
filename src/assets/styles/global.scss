@@ -1,0 +1,141 @@
+/** @format */
+
+:root,
+* {
+  scrollbar-color: rgba(201, 28, 90, 0.1) !important;
+  scrollbar-width: thin !important;
+  -webkit-tap-highlight-color: transparent !important;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0em !important;
+  height: 0em !important;
+}
+
+.fw-bold {
+  font-weight: 500 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-light {
+  font-weight: 400 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-small {
+  font-size: 0.75rem !important;
+}
+
+html {
+  font-size: rfs(18, 15) !important;
+  @include media-breakpoint-up(xxl) {
+    font-size: 18px !important;
+  }
+}
+
+.kwasu-logo {
+  height: rfs(35, 27) !important;
+  @include media-breakpoint-up(xxl) {
+    height: 35px !important;
+  }
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.brush {
+  font-family: "Comforter Brush", cursive;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.Toastify__toast--success {
+  background-color: $primary !important;
+  font-weight: 700 !important;
+  max-height: 20px !important;
+  font-size: 0.8rem;
+}
+
+.Toastify__toast--error {
+  background-color: $danger !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem;
+}
+
+.Toastify__progress-bar {
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3 {
+  @extend .fw-bold;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+label,
+.lead {
+  font-size: 1.125rem !important;
+  &.small {
+    font-size: 1rem !important;
+  }
+  &.x-small {
+    font-size: 0.875rem !important;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.home {
+  max-height: 100vh !important;
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+  }
+}
+
+.section-1 {
+  @include media-breakpoint-up(md) {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+}
+
+.section-2 {
+  @include media-breakpoint-up(md) {
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: scroll;
+  }
+}

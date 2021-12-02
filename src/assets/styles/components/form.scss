@@ -1,0 +1,21 @@
+/** @format */
+
+.form-control,
+.form-select {
+  height: 56px !important;
+  background: #f5f5fa !important;
+  outline: none !important;
+  border: none !important;
+  color: $dark-50 !important;
+  font-size: 1rem !important;
+  &::placeholder {
+    color: $dark-50;
+    font-size: 1rem !important;
+  }
+}
+
+.btn {
+  height: 56px;
+  font-size: 1.125rem !important;
+  border-radius: 0 !important;
+}
